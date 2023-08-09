@@ -7,7 +7,7 @@ export const options = {
     duration: "20m",
 };
 
-const endpoint = __ENV.ENDPOINT || "10.0.182.85:4317"
+const endpoint = __ENV.ENDPOINT || "172.20.49.217:4317"
 const client = new tracing.Client({
     endpoint,
     exporter: tracing.EXPORTER_OTLP,
