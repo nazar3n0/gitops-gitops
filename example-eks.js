@@ -7,7 +7,7 @@ export const options = {
     duration: "20m",
 };
 
-const endpoint = __ENV.ENDPOINT || "172.20.225.121:4317"
+const endpoint = __ENV.ENDPOINT || "tempo-distributed-distributor.monitoring.svc.cluster.local:4317:4317"
 const client = new tracing.Client({
     endpoint,
     exporter: tracing.EXPORTER_OTLP,
